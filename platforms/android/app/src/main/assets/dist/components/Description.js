@@ -137,7 +137,21 @@ module.exports = {
     "marginTop": "5",
     "marginRight": "5",
     "marginBottom": "5",
-    "marginLeft": "5"
+    "marginLeft": "5",
+    "display": "flex",
+    "flexDirection": "row",
+    "height": 100,
+    "border": "none"
+  },
+  "sect-img": {
+    "flex": 1
+  },
+  "sect-desc": {
+    "flex": 4
+  },
+  "image": {
+    "width": "100",
+    "height": "200"
   }
 }
 
@@ -150,7 +164,7 @@ module.exports = {
 
 
 Object.defineProperty(exports, "__esModule", {
-  value: true
+    value: true
 });
 //
 //
@@ -161,8 +175,16 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
+//
 
-exports.default = {};
+/* eslint-disable */
+exports.default = {
+    data: function data() {
+        return {
+            url: './images/flower1.jpg'
+        };
+    }
+};
 
 /***/ }),
 
@@ -170,11 +192,20 @@ exports.default = {};
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _vm._m(0)
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["content"]
-  }, [_c('text', [_vm._v("\r\n        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit illo\r\n        perferendis fugiat nobis enim iure dolor beatae ducimus reprehenderit et\r\n        harum consectetur culpa sint nostrum officia, quam distinctio maxime non.\r\n    ")])])
+  }, [_c('div', {
+    staticClass: ["sect-img"]
+  }, [_c('image', {
+    staticClass: ["image"],
+    attrs: {
+      "src": _vm.url
+    }
+  })]), _vm._m(0)])
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: ["sect-desc"]
+  }, [_c('text', [_vm._v("Lorem ipsum, dolor sit amet consectetur adipisicing elit.Sit illoperferendis fugiat nobis enim iure dolor beatae ducimus reprehenderit et harum consectetur culpa sint nostrum officia, quam distinctio maxime non.")])])
 }]}
 module.exports.render._withStripped = true
 

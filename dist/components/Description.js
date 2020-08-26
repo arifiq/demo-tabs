@@ -139,14 +139,19 @@ module.exports = {
     "marginBottom": "5",
     "marginLeft": "5",
     "display": "flex",
-    "flexDirection": "row"
+    "flexDirection": "row",
+    "height": 100,
+    "border": "none"
   },
-  "sect": {
+  "sect-img": {
     "flex": 1
+  },
+  "sect-desc": {
+    "flex": 4
   },
   "image": {
     "width": "100",
-    "height": "100"
+    "height": "200"
   }
 }
 
@@ -161,10 +166,6 @@ module.exports = {
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-//
-//
-//
-//
 //
 //
 //
@@ -194,7 +195,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   return _c('div', {
     staticClass: ["content"]
   }, [_c('div', {
-    staticClass: ["sect"]
+    staticClass: ["sect-img"]
   }, [_c('image', {
     staticClass: ["image"],
     attrs: {
@@ -203,8 +204,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   })]), _vm._m(0)])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
-    staticClass: ["sect"]
-  }, [_c('text', [_vm._v("\r\n            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit illo\r\n            perferendis fugiat nobis enim iure dolor beatae ducimus reprehenderit et\r\n            harum consectetur culpa sint nostrum officia, quam distinctio maxime non.\r\n        ")])])
+    staticClass: ["sect-desc"]
+  }, [_c('text', [_vm._v("Lorem ipsum, dolor sit amet consectetur adipisicing elit.Sit illoperferendis fugiat nobis enim iure dolor beatae ducimus reprehenderit et harum consectetur culpa sint nostrum officia, quam distinctio maxime non.")])])
 }]}
 module.exports.render._withStripped = true
 

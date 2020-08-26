@@ -32,7 +32,7 @@ export default {
     height: 70,
     fontSize: 24,
     hasActiveBottom: true,
-    activeBottomColor: '#673ab7',
+    activeBottomColor: '#FFC900',
     activeBottomHeight: 2,
     activeBottomWidth: 120,
     textPaddingLeft: 10,

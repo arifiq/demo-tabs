@@ -20626,7 +20626,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n.content[data-v-7e89cb7a] {\r\n    margin: 0.06667rem;\r\n    text-align: start;\n}\r\n", ""]);
+exports.push([module.i, "\n.content[data-v-7e89cb7a] {\r\n    margin: 0.06667rem;\r\n    text-align: start;\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: flex;\r\n    flex-direction: row;\r\n    height: 100%;\r\n    border: none;\n}\n.sect-img[data-v-7e89cb7a] {\r\n    flex: 1;\n}\n.sect-desc[data-v-7e89cb7a] {\r\n    flex: 4;\n}\n.image[data-v-7e89cb7a]{\r\n    width: 1.33333rem;\r\n    height: 2.66667rem;\n}\r\n", ""]);
 
 // exports
 
@@ -20639,7 +20639,7 @@ exports.push([module.i, "\n.content[data-v-7e89cb7a] {\r\n    margin: 0.06667rem
 
 
 Object.defineProperty(exports, "__esModule", {
-  value: true
+    value: true
 });
 //
 //
@@ -20650,8 +20650,16 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
+//
 
-exports.default = {};
+/* eslint-disable */
+exports.default = {
+    data: function data() {
+        return {
+            url: './images/flower1.jpg'
+        };
+    }
+};
 
 /***/ }),
 /* 15 */
@@ -20663,12 +20671,29 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "weex-type": "div"
     }
+  }, [_c('div', {
+    staticClass: "sect-img weex-ct weex-div",
+    attrs: {
+      "weex-type": "div"
+    }
+  }, [_c('figure', {
+    staticClass: "image weex-el weex-image",
+    attrs: {
+      "src": _vm.url,
+      "data-img-src": _vm.url,
+      "weex-type": "image"
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "sect-desc weex-ct weex-div",
+    attrs: {
+      "weex-type": "div"
+    }
   }, [_c('p', {
     staticClass: " weex-el weex-text",
     attrs: {
       "weex-type": "text"
     }
-  }, [_vm._v("\r\n        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit illo\r\n        perferendis fugiat nobis enim iure dolor beatae ducimus reprehenderit et\r\n        harum consectetur culpa sint nostrum officia, quam distinctio maxime non.\r\n    ")])])
+  }, [_vm._v("Lorem ipsum, dolor sit amet consectetur adipisicing elit.Sit illoperferendis fugiat nobis enim iure dolor beatae ducimus reprehenderit et harum consectetur culpa sint nostrum officia, quam distinctio maxime non.")])])])
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {
@@ -20966,7 +20991,7 @@ exports.default = {
   data: function data() {
     return {
       state: '----',
-      src: '../../src/assets/images/mov_bbb.mp4'
+      src: './images/mov_bbb.mp4'
     };
   },
 
@@ -23767,7 +23792,7 @@ exports.default = {
     height: 70,
     fontSize: 24,
     hasActiveBottom: true,
-    activeBottomColor: '#673ab7',
+    activeBottomColor: '#FFC900',
     activeBottomHeight: 2,
     activeBottomWidth: 120,
     textPaddingLeft: 10,
