@@ -20316,7 +20316,7 @@ exports.default = {
   data: function data() {
     return {
       state: '----',
-      src: 'https://www.w3schools.com/html/mov_bbb.mp4'
+      src: '../../src/assets/images/mov_bbb.mp4'
     };
   },
 

@@ -3,7 +3,6 @@
   <div class="header-container">
     <text class="title">WeexCompareDemo</text>
   </div>
-
   <wxc-tab-page ref="wxc-tab-page"
                 :tab-titles="tabTitles"
                 :tab-styles="tabStyles"

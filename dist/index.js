@@ -481,7 +481,16 @@ module.exports = {
     "marginTop": "5",
     "marginRight": "5",
     "marginBottom": "5",
-    "marginLeft": "5"
+    "marginLeft": "5",
+    "display": "flex",
+    "flexDirection": "row"
+  },
+  "sect": {
+    "flex": 1
+  },
+  "image": {
+    "width": "100",
+    "height": "100"
   }
 }
 
@@ -493,7 +502,7 @@ module.exports = {
 
 
 Object.defineProperty(exports, "__esModule", {
-  value: true
+    value: true
 });
 //
 //
@@ -504,19 +513,40 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
+//
+//
+//
+//
+//
 
-exports.default = {};
+/* eslint-disable */
+exports.default = {
+    data: function data() {
+        return {
+            url: './images/flower1.jpg'
+        };
+    }
+};
 
 /***/ }),
 /* 4 */
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _vm._m(0)
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["content"]
-  }, [_c('text', [_vm._v("\r\n        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit illo\r\n        perferendis fugiat nobis enim iure dolor beatae ducimus reprehenderit et\r\n        harum consectetur culpa sint nostrum officia, quam distinctio maxime non.\r\n    ")])])
+  }, [_c('div', {
+    staticClass: ["sect"]
+  }, [_c('image', {
+    staticClass: ["image"],
+    attrs: {
+      "src": _vm.url
+    }
+  })]), _vm._m(0)])
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: ["sect"]
+  }, [_c('text', [_vm._v("\r\n            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit illo\r\n            perferendis fugiat nobis enim iure dolor beatae ducimus reprehenderit et\r\n            harum consectetur culpa sint nostrum officia, quam distinctio maxime non.\r\n        ")])])
 }]}
 module.exports.render._withStripped = true
 
@@ -620,7 +650,7 @@ exports.default = {
   },
   created: function created() {
     for (var i = 1; i < 1000; i++) {
-      this.items.push({ name: 'flower' + i, url: '../../src/assets/images/flower1.jpg' });
+      this.items.push({ name: 'flower' + i, url: './images/flower' + i + '.jpg' });
     }
   }
 };
@@ -751,7 +781,7 @@ exports.default = {
   data: function data() {
     return {
       state: '----',
-      src: '../../src/assets/images/mov_bbb.mp4'
+      src: './images/mov_bbb.mp4'
     };
   },
 
@@ -1804,7 +1834,6 @@ var _vue2 = _interopRequireDefault(_vue);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-//
 //
 //
 //

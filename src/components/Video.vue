@@ -25,7 +25,7 @@
     data () {
       return {
         state: '----',
-        src:'../../src/assets/images/mov_bbb.mp4'
+        src:'./images/mov_bbb.mp4'
       }
     },
     methods:{

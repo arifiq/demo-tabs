@@ -20795,7 +20795,7 @@ exports.default = {
   },
   created: function created() {
     for (var i = 1; i < 1000; i++) {
-      this.items.push({ name: 'flower' + i, url: '../../src/assets/images/flower1.jpg' });
+      this.items.push({ name: 'flower' + i, url: './images/flower' + i + '.jpg' });
     }
   }
 };
@@ -20966,7 +20966,7 @@ exports.default = {
   data: function data() {
     return {
       state: '----',
-      src: 'https://www.w3schools.com/html/mov_bbb.mp4'
+      src: '../../src/assets/images/mov_bbb.mp4'
     };
   },
 
@@ -22050,7 +22050,6 @@ var _vue2 = _interopRequireDefault(_vue);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-//
 //
 //
 //

@@ -21,7 +21,7 @@
     },
     created () {
       for (let i = 1; i < 1000; i++) {
-        this.items.push({name: `flower${i}`, url: `../../src/assets/images/flower1.jpg`})
+        this.items.push({name: `flower${i}`, url: `./images/flower${i}.jpg`})
       }
     },
   }

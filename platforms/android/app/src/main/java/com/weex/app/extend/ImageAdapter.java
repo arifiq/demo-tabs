@@ -20,6 +20,7 @@ package com.weex.app.extend;
 
 import android.net.Uri;
 import android.text.TextUtils;
+import android.util.Log;
 import android.widget.ImageView;
 
 import com.squareup.picasso.Callback;
@@ -53,6 +54,13 @@ public class ImageAdapter implements IWXImgLoaderAdapter {
         String temp = url;
         if (url.startsWith("//")) {
           temp = "http:" + url;
+        }
+        if(temp.startsWith("file://assets")){
+          temp = temp.replace("../","");
+          temp = temp.replace("./","");
+          temp = temp.replace("file://assets", "file:///android_asset");
+          Log.d("ImageAdapter", "url:" + temp);
+          Log.e("url","temp");
         }
         if (view.getLayoutParams().width <= 0 || view.getLayoutParams().height <= 0) {
           return;
